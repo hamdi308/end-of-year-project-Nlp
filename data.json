@@ -1,0 +1,463 @@
+{"intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?",
+        "Is there anything I can help you."
+      ]
+    },
+    {"tag": "asking robot",
+     "patterns": ["Are you a robot?" ],
+     "responses": ["Yes I am a robot, How can I help you?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye","bye robot"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon.",
+        "Nice Meeting you, hope I see you back soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!",
+                    "Any time!",
+                    "My pleasure",
+                    "Never mention, I am more thankful you contacted us.",
+                    "Sure! You can contact us anytime."
+                    ]
+    },
+    {"tag": "noanswer",
+     "patterns": [],
+     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"]
+    },
+    {"tag": "options",
+     "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+     "responses": ["I can guide you through the SETIT conferance which will happned in May", 
+      "Offering support", "giving some idea about the conferance","guide by informations"]
+    },
+    {"tag": "time",
+     "patterns": ["When do you want to open peer review?",
+      "when","What time it goona be?", "when the conference ",
+      "Which month ","conference date",
+       "When will the event be held?" ],
+     "responses": ["it will be on 28th and 30 May 2022"]
+    },
+    {"tag": "place of the conference",
+     "patterns": ["where it gonna be?","Where exactly it will be held",
+      "conference place?","place ?","What is the name of the hotel?","Where is it?","Where will the event take place?","where?" ],
+     "responses": ["It will be in the hotel in hammemet"]
+    },
+    {
+        "tag": "chicken_cost",
+      "patterns": [
+        "How much does chicken pizza cost?",
+        "Can I know the price of chicken pizza?",
+        "I much do I pay for chicken pizza?",
+        "What is the cost of chicken pizza?",
+        "What is the price of chicken pizza?"
+      ],
+      "responses": [
+        "It is Rs.349 for Small Rs.449 for Medium and Rs.549 for Large.",
+        "You can get small for Rs.349, Medium for Rs.449 and Large for Rs.549.",
+        "The prices are Small-Rs.349,Medium-Rs.449 and Large-Rs.549."
+      ]
+    },
+    {
+        "tag": "veg_cost",
+      "patterns": [
+        "How much does veg pizza cost?",
+        "Can I know the price of veg pizza?",
+        "I much do I pay for veg pizza?",
+        "What is the cost of veg pizza?",
+        "What is the price of veg pizza?"
+      ],
+      "responses": [
+        "It is Rs.299 for Small Rs.399 for Medium and Rs.449 for Large.",
+        "You can get small for Rs.299, Medium for Rs.399 and Large for Rs.449.",
+        "The prices are Small-Rs.299,Medium-Rs.399 and Large-Rs.449."
+      ]
+    },
+        {
+      "tag": "special",
+      "patterns": [
+        "What is special on the menu?",
+        "Do you have any special?",
+        "What do you recommend?",
+        "What's todays special?",
+        "Recommend me special Pizza?"
+      ],
+      "responses": [
+        "As per costumer reviews we recommend you to try New York Chicken Pizza.",
+        "New York Chicken Pizza is liked by most of the costumers.",
+        "You definitely should try New York Chicken Pizza.",
+        "You will never regret trying New York Chicken Pizza."
+      ]
+    },
+        {
+      "tag": "delivery",
+      "patterns": [
+        "Can you deliver the pizzas?",
+        "Do you make delivery?",
+        "Is delivery avaiable?"
+      ],
+      "responses": [
+        "We deliver on every doorsteps",
+        "Of course! We would be glad to deliver it to your address.",
+        "We deliver 24/7 in every places all over India."
+      ]
+    },
+        {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept paytm?",
+        "Can I pay with googlepay?",
+        "Are you cash only?",
+        "Do you accept online payment.",
+        "Can I order pay on delivery"
+      ],
+      "responses": [
+        "We accept paytm, googlepay and COD",
+        "You either paytm and googlepay us or can pay in cash",
+        "If you don't use online payment method you can pay us in cash, and if you do you may paytm or googlepay us.",
+        "For customers convinience we accept paytm, googlepay and cash."
+      ]
+    },
+                          {
+      "tag": "options",
+      "patterns": [
+        "what do you guys rent?",
+        "What are my options",
+        "What transports can i get here"
+    ],
+      "responses": [
+        "we rent single and double rooms ",
+        "we have huge availability "
+      ]
+    },
+                              {
+      "tag": "opentoday",
+      "patterns": [
+        "Are the reservation open today?",
+        "When do the reservation open today?",
+        "What are the reservation hours today?"
+    ],
+      "responses": [
+        "We're open every day from 9am-9pm",
+        "Our hours are 9am-9pm every day"
+      ]
+    },
+                                 {
+      "tag": "payments",
+      "patterns": [
+        "How are you today?",
+        "How are you holding up?",
+        "How are you doing robot?",
+        "How’s everything?",
+        "How’s it going?",
+        "How are things?",
+        "What’s up robot ?",
+        "What's been on your mind recently?"
+    ],
+      "responses": [
+        "I’m fine, thank you human",
+        "I’m good.",
+        "Pretty good",
+        "I’m well, thank you human"
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "WAre you cash only?",
+        "Can I pay in cash"
+    ],
+      "responses": [
+        "We accept VISA, Mastercard and AMEX",
+        "We accept most major credit cards"
+      ]
+    },
+    {
+        "tag": "Menu",
+        "patterns": [
+            "Which items do you have in the hotel restaurent?",
+            "What kinds of items are in the hotel restaurent?",
+            "What do you serve?",
+            "What is in you menu?",
+            "I need a drink!",
+            "Do you serve drinks.",
+            "Menu please!",
+            "So what is in menu today?",
+            "Lets check your hotel restaurent selection!",
+            "the hotel restaurent menu for me please!"
+        ],
+        "responses": [
+            "I could serve for your: Fuzzy Tauntaun, Bloody Rancor, Jedi Mind Trick, T-16 Skyhopper, Yub Nub, Jet Juice, Hyperdrive, Rancor Beer.",
+            "No coffe and no tea, only: Fuzzy Tauntaun, Bloody Rancor, Jedi Mind Trick, T-16 Skyhopper, Yub Nub, Jet Juice, Hyperdrive, Rancor Beer.",
+            "What about: Fuzzy Tauntaun, Bloody Rancor, Jedi Mind Trick, T-16 Skyhopper, Yub Nub, Jet Juice, Hyperdrive, Rancor Beer, please choose!",
+            "Menu: Fuzzy Tauntaun, Bloody Rancor, Jedi Mind Trick, T-16 Skyhopper, Yub Nub, Jet Juice, Hyperdrive, Rancor Beer.",
+            "Before mans talk choose: Fuzzy Tauntaun, Bloody Rancor, Jedi Mind Trick, T-16 Skyhopper, Yub Nub, Jet Juice, Hyperdrive, Rancor Beer.",
+            "What about: Fuzzy Tauntaun, Bloody Rancor, Jedi Mind Trick, T-16 Skyhopper, Yub Nub, Jet Juice, Hyperdrive, Rancor Beer.",
+            "What you prefere: Fuzzy Tauntaun, Bloody Rancor, Jedi Mind Trick, T-16 Skyhopper, Yub Nub, Jet Juice, Hyperdrive, Rancor Beer.",
+            "Ok our best optins: Fuzzy Tauntaun, Bloody Rancor, Jedi Mind Trick, T-16 Skyhopper, Yub Nub, Jet Juice, Hyperdrive, Rancor Beer.",
+            "Our hotel restaurent menu: Fuzzy Tauntaun, Bloody Rancor, Jedi Mind Trick, T-16 Skyhopper, Yub Nub, Jet Juice, Hyperdrive, Rancor Beer.",
+            "be carreful with your choise: Fuzzy Tauntaun, Bloody Rancor, Jedi Mind Trick, T-16 Skyhopper, Yub Nub, Jet Juice, Hyperdrive, Rancor Beer."
+        ]
+    },
+    {
+        "tag": "hepl",
+        "patterns": [
+            "I am looking for help.",
+            "I need help.",
+            "Can you help me?",
+            "I am in trouble need a help.",
+            "I hope you right person who can help me?",
+            "Please help me.",
+            "Now I will need you help with something else.",
+            "I will need you help.",
+            "Are you able to help me.",
+            "PLease help me with something else."
+        ],
+        "responses": [
+            "Sure, how can in help you.",
+            "Tell me what do you lookimg for?",
+            "I will help you, just tell me how.",
+            "You are at the address.",
+            "Ok, what is issue?",
+            "Now you need a help? Ok what you are looking for?",
+            "Whas is you problem?",
+            "Ok, you problem is my problem, if your are paying.",
+            "My help cost a lot.",
+            "Sure, but nnot for free."
+        ]
+    },
+    {
+        "tag": "visit",
+        "patterns": [
+            "I am on visit.",
+            "I need assistance in my visit.",
+            "I am looking for partner for my visit?",
+            "Who can assist me during my visit?",
+            "Do you know any one who can assist during my visit?"
+        ],
+        "responses": [
+            "Just tell me, you are what you're looking for",
+            "yes we can afford someone to guide you",
+            "all our staff in your service sir"
+        ]
+    },
+    {
+        "tag": "creator",
+        "patterns": [
+            "Who is your creator?",
+            "Who created you"
+        ],
+        "responses": [
+            "That wouldn't be you ",
+            "I was created by chayma haha et hamdi hadda.",
+            "two engineering students created me for their final year project."
+        ]
+    },
+    {
+        "tag": "stories",
+        "patterns": [
+            "Tell me a story?",
+            "Can you tell me a story."
+        ],
+        "responses": [
+            "I can't think of anything right now.",
+            "It would be too long for me to speak.",
+            "You would get bored if I do so."
+        ]
+    },
+    {
+      "tag": "Topics ",
+      "patterns" :[
+        "What about topics ?", "can you tell me about topics?", "topics ?","tell me more about topics?"
+      ], 
+      "responses" : [
+        "We have 7 topics in this conference, Information Processing, Human-machine Interaction, Computer Science, Telecommunications and Networks, Signal Processing, Electronics, Image and Video, i can tell you more about the topic you need to know more :)"
+      ]
+    },
+    {
+      "tag":"Information processing",
+      "patterns":[
+        "Information processing",
+        "what about information processing ?", 
+        "info proccessing?", 
+        "info proc?"
+      ],
+      "responses":[
+        "We have : Machine Learning; Fuzzy Logic and Computational intelligence; Data Mining; Information Fusion; Source Separation; Business Intelligence; Artificial intelligence ."
+      ]
+    },
+    {
+      "tag":"Human-machine Interaction",
+      "patterns":[
+        "Human-machine Interaction",
+        "what about Human-machine Interaction?", 
+        "HM interaction ?", 
+        "H & M ?"
+      ],
+      "responses":[
+        "We have : Model Driven Engineering; UX and Usability; Virtual, Mixed and Augmented Reality; Ubiquitous Computing Systems; Adaptive and Intelligent Systems;Social Networks.  "
+      ]
+    },
+    {
+      "tag":"Computer Science",
+      "patterns":[
+        "Computer Science",
+        "what about Computer Science?", 
+        "cptr science ?",
+        "tell me more informations about computer science"
+           ],
+      "responses":[
+        "We have : Algorithm and Theory; Programming Languages; High-performance computing; Information Systems Management; Intelligent e-Technology; Data Warehouse and Big Data; Quantum Information Science."
+      ]
+    }, 
+    {
+      "tag":"Telecommunications and Networks",
+      "patterns":[
+        "Telecommunications and Networks",
+        "what about Telecommunications and Networks?", 
+        "tell me more informations about Telecommunications and Networks?",
+        "telecom  ?"
+           ],
+      "responses":[
+        "We have : Network Protocols; Wireless Sensor Networks; Networks and Cloud Computing Security; Quality of Service and Resource Management; Internet Of Things; Vehicular Applications and Inter-Networking Technologies."
+      ]
+    }, 
+    {
+      "tag":"Signal Processing",
+      "patterns":[
+        "Signal Processing",
+        "what about Signal Processing?", 
+        "signal ?"
+           ],
+      "responses":[
+        "We have : Signal Detection, Estimation and Restoration; Statistical Signal Processing; Design and Implementation of Signal Processing; Audio, Acoustic, Speech and Biomedical Signal; Non-Stationary, Non-linear and Non-gaussian Signal; Modeling in Signals."
+      ]
+    },  
+    {
+      "tag":"Electronics",
+      "patterns":[
+        "Electronics",
+        "what about Electronics?", 
+        "electro ?"
+           ],
+      "responses":[
+        "We have : Electronic Integration; Circuits and Systems for Communications; Nanodevices and Nanosystems; Instrumentation Engineering; Embedded system; Automatic Control of Power Plants"
+      ]
+    }, 
+    {
+      "tag":"Image and Video",
+      "patterns":[
+        "Image and Video",
+        "what about Image and Video?", 
+        "img vid ?"
+           ],
+      "responses":[
+        "We have : Image and Video Processing Technology; Compression, Coding and Implementation; Cryptology and Watermarking; Storage, Retrieval, and Authentication; ; Storage, Retrieval, and Authentication; Biomedical Image and Health; Multimedia Applications."
+      ]
+    } ,
+    {
+      "tag":"Deadline submission",
+      "patterns":[
+        "submission day",
+        "submission date",
+        "submission",
+        "New Deadline Submission",
+        "when the new deadline submission?", 
+        "deadline submission?",
+        "deadline ?"
+           ],
+      "responses":[
+        "Dealine submission on 30th November 2021"
+      ]
+    },
+    {
+      "tag":"Acceptance Notification",
+      "patterns":[
+        "Acceptance Notification",
+        "when the Acceptance Notification?", 
+        "acceptance notif?"
+      ],
+      "responses":[
+        "Acceptance Notification : on 15th January 2022"
+      ]
+    },
+    {
+      "tag":"Final Paper Upload",
+      "patterns":[
+        "final paper upload",
+        "when the paper upload?", 
+        "paper upload?"
+      ],
+      "responses":[
+        "Acceptance Notification : on 30th January 2022"
+      ]
+    },
+    {
+      "tag":"Final Notification",
+      "patterns":[
+        "final notification ",
+        "when the final notification?", 
+        " final notif?","final notiiif"
+      ],
+      "responses":[
+        "final Notification : on 15th April 2022"
+      ]
+    },
+    {
+      "tag":"Early Registration",
+      "patterns":[
+        "registration date",
+        "registation day",
+        "Early Registration ",
+        "when early registration?", 
+        "registration?"
+      ],
+      "responses":[
+        "Early Registration : on 30th April 2022"
+      ]
+    },
+    {
+      "tag":"imprecision",
+      "patterns":[
+        "date ?","notif ?","notification","final"
+      ],
+      "responses":[
+        "please more precision in your question !"
+      ]
+    },
+    {
+      "tag":"tutorials",
+      "patterns":[
+        "tutorials speakers of setit 2022",
+        "speakers",
+        "TUTORIALS",
+        "tuto"
+      ],
+      "responses":[
+        "Prof. Johan Debayle;     Prof. Pascal Lorenz;     Prof. Robert Laurini;     Prof. Khalil SAYIDMARIE;     Prof. Deepak Gupta;     Prof. Amir HAJJAM EL HASSANI;     Prof. Adriana Burlea-Schiopoiu  ..... For more information you can visit this heading : ===> http://www.setit.rnu.tn/tutorials-speakers.html"
+      ]
+       } 
+]
+}
