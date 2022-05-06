@@ -41,10 +41,6 @@
                     "Sure! You can contact us anytime."
                     ]
     },
-    {"tag": "noanswer",
-     "patterns": [],
-     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"]
-    },
     {"tag": "options",
      "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
      "responses": ["I can guide you through the SETIT conferance which will happned in May", 
@@ -138,18 +134,6 @@
         "For customers convinience we accept paytm, googlepay and cash."
       ]
     },
-                          {
-      "tag": "options",
-      "patterns": [
-        "what do you guys rent?",
-        "What are my options",
-        "What transports can i get here"
-    ],
-      "responses": [
-        "we rent single and double rooms ",
-        "we have huge availability "
-      ]
-    },
                               {
       "tag": "opentoday",
       "patterns": [
@@ -163,7 +147,7 @@
       ]
     },
                                  {
-      "tag": "payments",
+      "tag": "situation",
       "patterns": [
         "How are you today?",
         "How are you holding up?",
@@ -179,19 +163,6 @@
         "I’m good.",
         "Pretty good",
         "I’m well, thank you human"
-      ]
-    },
-    {
-      "tag": "payments",
-      "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "WAre you cash only?",
-        "Can I pay in cash"
-    ],
-      "responses": [
-        "We accept VISA, Mastercard and AMEX",
-        "We accept most major credit cards"
       ]
     },
     {
@@ -293,7 +264,7 @@
         "What about topics ?", "can you tell me about topics?", "topics ?","tell me more about topics?"
       ], 
       "responses" : [
-        "We have 7 topics in this conference, Information Processing, Human-machine Interaction, Computer Science, Telecommunications and Networks, Signal Processing, Electronics, Image and Video, i can tell you more about the topic you need to know more :)"
+        "We have 7 topics in this conference, Information Processing, Human-machine Interaction, Computer Science, Telecommunications - Networks, Signal Processing, Electronics, Image - Video, i can tell you more about the topic you need to know more :)"
       ]
     },
     {
@@ -333,11 +304,11 @@
       ]
     }, 
     {
-      "tag":"Telecommunications and Networks",
+      "tag":"Telecommunications - Networks",
       "patterns":[
-        "Telecommunications and Networks",
-        "what about Telecommunications and Networks?", 
-        "tell me more informations about Telecommunications and Networks?",
+        "Telecommunications - Networks",
+        "what about Telecommunications - Networks?", 
+        "tell me more informations about Telecommunications - Networks?",
         "telecom  ?"
            ],
       "responses":[
@@ -367,10 +338,10 @@
       ]
     }, 
     {
-      "tag":"Image and Video",
+      "tag":"Image - Video",
       "patterns":[
-        "Image and Video",
-        "what about Image and Video?", 
+        "Image - Video",
+        "what about Image - Video?", 
         "img vid ?"
            ],
       "responses":[
@@ -458,6 +429,35 @@
       "responses":[
         "Prof. Johan Debayle;     Prof. Pascal Lorenz;     Prof. Robert Laurini;     Prof. Khalil SAYIDMARIE;     Prof. Deepak Gupta;     Prof. Amir HAJJAM EL HASSANI;     Prof. Adriana Burlea-Schiopoiu  ..... For more information you can visit this heading : ===> http://www.setit.rnu.tn/tutorials-speakers.html"
       ]
-       } 
-]
+       },
+       {
+         "tag":"Registration fees",
+         "patterns":[
+           "Registration fees",
+           "fees","price of registration","price", 
+           "cost of registration","payment of registration","charge of registration"
+         ],
+         "responses":[
+           "for Phd Student 130 Euros/425 Dinars , for Researcher 150 Euros/495 Dinars, for Industrial 200 Euros/660 Dinars, These fees include the Conference proceedings, the admission to the plenary sessions and Parallel Technical Sessions, and coffee breaks,Additional paper poster: Free,Additional regular paper (max 1 paper): 30 Euros/ 99 Dinars,Theses fees are available until 10 May 2022 at Midday. After this deadline, conference fees will increase 20%"
+         ]
+       },
+       {
+        "tag":"Financial supports",
+        "patterns":[
+          "Financial supports","financial"
+        ],
+        "responses":[
+          "A financial support (Up to 100 Euros/330 Dinars) is allocated for participants from developing countries and countries with poor currencies and not supported by their research structures. The IEEE SETIT 2022 Organizing Committee will examine all applications on a case-by-case basis and provide a response for the accepted requests for more information visit us on : http://www.setit.rnu.tn/registration-fees.html"
+        ]
+       },
+       {
+         "tag":"commitee",
+         "patterns":[
+          "SCIENTIFIC COMMITTEE","commitee","scientific"
+         ],
+         "responses":[
+          "You can meet the commitee by visiting this link : http://www.setit.rnu.tn/scientific-committee.html"
+         ]
+       }
+      ]
 }

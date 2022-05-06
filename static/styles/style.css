@@ -1,9 +1,9 @@
 :root {
     --body-bg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     --msger-bg: #fff;
-    --border: 2px solid rgb(170, 115, 115);
-    --left-msg-bg: #ececec;
-    --right-msg-bg: linear-gradient(#e66465, #9198e5);
+    --border: 1px solid #3ab5b0;
+    --left-msg-bg: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+    --right-msg-bg: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
   }
   
   html {
@@ -43,7 +43,7 @@
     padding: 10px;
     text-align: center;
     border-bottom: var(--border);
-    background: linear-gradient(#e66465, #9198e5);
+    background: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
     color: #fff;
   }
   
@@ -99,6 +99,7 @@
   
   .left-msg .msg-bubble {
     border-bottom-left-radius: 0;
+    color:#fff;
   }
   
   .right-msg {
@@ -117,7 +118,7 @@
     display: flex;
     padding: 8px;
     border: none;
-    background: linear-gradient(#e66465, #9198e5);;
+    background: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
   }
   .msger-inputarea * {
     padding: 8px;
@@ -134,7 +135,7 @@
     color: #fff;
     font-weight: bold;
     cursor: pointer;
-    opacity: 0.65;
+    opacity: 0.7;
     transition: 0.3s;
     border-radius: 5px;
   }

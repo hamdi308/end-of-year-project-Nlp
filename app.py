@@ -101,7 +101,7 @@ def getResponse(ints, intents_json):
         if(tag == i['tag']):
             result = random.choice(i['responses'])
   except IndexError:
-    result ='Sorry i can\'t understand you '  
+    result ='Sorry i can\'t understand you '
  elif str(type(ints))=='<class \'tuple\'>':
       try :
         tag1 = ints[0][0]['intent']

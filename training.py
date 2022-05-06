@@ -74,7 +74,7 @@ model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy
 
 #fitting and saving the model 
 hist = model.fit(np.array(train_x), np.array(train_y), epochs=380, batch_size=5, verbose=1)
-hist = model.fit(np.array(train_x), np.array(train_y), validation_split=0.9, epochs=65, batch_size=5, verbose=1)
+hist = model.fit(np.array(train_x), np.array(train_y), validation_split=0.9, epochs=90, batch_size=5, verbose=1)
 model.save('model.h5', hist)
 print(len(train_y[0]))
 print("model created")
